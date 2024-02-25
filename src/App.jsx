@@ -15,12 +15,25 @@ const PageContainer = styled.div`
 `;
 
 const HeaderContainer = styled.div`
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   padding: 0.5rem 1rem;
+  @media only screen and (max-width: 991px) {
+    padding: 0.5rem 1rem 2rem;
+  }
 `;
 
 const LogoText = styled.h1`
   font-size: 2.5rem;
   color: white;
+  text-shadow: 0 5px 5px #000;
+  @media only screen and (max-width: 991px) {
+    font-size: 2.3rem;
+  }
+  @media only screen and (max-width: 475px) {
+    font-size: 2rem;
+  }
 `;
 
 function App() {
