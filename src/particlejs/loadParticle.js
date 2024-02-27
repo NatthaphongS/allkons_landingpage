@@ -1,11 +1,11 @@
 // Dynamically load the "particles.js" script
 function loadParticlesScript() {
   const script = document.createElement('script');
-  script.src = 'particles.js';
+  script.src = './src/particlejs/particles.js';
   script.async = true;
   document.body.appendChild(script);
   const script2 = document.createElement('script');
-  script2.src = 'particles-config.js';
+  script2.src = './src/particlejs/particles-config.js';
   script2.async = true;
   document.body.appendChild(script2);
 
